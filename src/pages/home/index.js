@@ -3,7 +3,7 @@ import Lottie from 'react-lottie';
 
 import Menu from '../../components/menu'
 
-import { Container, PrimayText, SecundaryText, SubTitleText, TitleText, Footer } from './style'
+import { Container, PrimayText, SecundaryText, SubTitleText, TitleText, Email, Footer } from './style'
 
 import animationData from '../../assets/designer.json'
 import siteDevelopmentData from '../../assets/testing.json'
@@ -14,6 +14,8 @@ import EmailData from '../../assets/email.json'
 import github from '../../assets/github.png'
 import instagram from '../../assets/insta.png'
 import linkedin from '../../assets/in.png'
+
+import ResumePDF from '../../assets/Carlos_Ziegler-German.pdf'
 
 
 export default function Home() {
@@ -136,7 +138,7 @@ export default function Home() {
                             />
                         </div>
                         <div className="tag">
-                            <h4 className="bg-color" > Open my Resume </h4>
+                            <a href={ResumePDF} target="_blank" rel="noopener noreferrer"><h4 className="bg-color" > Open my Resume </h4></a>
                         </div>
 
                     </session>
@@ -148,13 +150,13 @@ Contact me! If you want to start working with me then don’t be shy to write me
 
                 <Container>
                     <session className="column-2" >
-                        <div className="tag">
-                            <TitleText>carlos.ziegler@gmail.com</TitleText>
-                            <div >
-                                <img className="contactLogo" src={linkedin} alt="" />
-                                <img className="contactLogo" src={github} alt="" />
-                                <img className="contactLogo" src={instagram} alt="" />
-                            </div>
+                        <div >
+                            <a href="mailto:carlos.ziegler@gmail.com" target="_blank" rel="noopener noreferrer"><Email >carlos.ziegler@gmail.com</Email></a>
+                            <Container >
+                                <a href="https://www.linkedin.com/in/carlos-ziegler/" target="_blank" rel="noopener noreferrer"  ><img className="contactLogo" src={linkedin} alt="" /></a>
+                                <a href="https://github.com/CarlosZiegler" target="_blank" rel="noopener noreferrer"><img className="contactLogo" src={github} alt="" /></a>
+                                <a href="https://www.instagram.com/carloszieglerbjj/" target="_blank" rel="noopener noreferrer"><img className="contactLogo" src={instagram} alt="" /></a>
+                            </Container>
                         </div>
                         <div>
                             <Lottie options={OptionsEmail}

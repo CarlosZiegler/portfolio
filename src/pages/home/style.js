@@ -34,9 +34,17 @@ export const Container = styled.div`
        display: flex;
        flex-direction: column;
        flex-wrap:wrap;
+
+      
    }
    .contactLogo{
       margin: 0px 15px;
+      max-width:100%
+   }
+
+   a{
+      text-decoration:none;
+      color: black;
    }
    
    
@@ -63,11 +71,27 @@ export const SecundaryText = styled.p`
 
 export const TitleText = styled.h2`
    color: #E4E4E4;
-   font-size:3rem;
+   font-size:2rem;
    display: flex;
    justify-content: center;
    flex-wrap:wrap;
    text-align: center;
+   
+   
+   
+`
+export const Email = styled.h4`
+   color: #E4E4E4;
+   font-size:1.6rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap:wrap;
+   text-align: center;
+   border-bottom: 1px solid white;
+   margin: 30px 10px;
+   text-decoration: none;
+   
+   
    
 `
 export const SubTitleText = styled.h4`
