@@ -3,27 +3,87 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
    display: flex;
-   align-items: center;
    justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-wrap:wrap;
    width: 100%;
    padding: 0;
-   margin: 0;    
-`
+   margin: 0;
 
-export const LottieContainer = styled.div`
-   width: 100%;
-   height: auto;
-   max-height: 80vh;
-   margin: 0 auto;
+   .bg-color{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      background:#FF9902;
+      border: 1px solid #FF9902;
+      border-radius:5px;
+      padding:20px;
+      margin: 20px;
+      width: 150px;
+   }
+
+   .column-2{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items:center;
+   }
+
+   .tag{
+       display: flex;
+       flex-direction: column;
+       flex-wrap:wrap;
+   }
+   .contactLogo{
+      margin: 0px 15px;
+   }
+   
    
 `
 export const PrimayText = styled.h2`
+   display: flex;
+   justify-content: center;
+   flex-wrap:wrap;
    color: #E4E4E4;
    font-size:2rem;
+   text-align: center;
+   padding:0px 35px 0px 35px;
    
 `
 export const SecundaryText = styled.p`
    color: #E4E4E4;
-   font-size:2rem;
+   font-size:1.2rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap:wrap;
+   text-align: center;
+   padding:0px 35px 0px 35px;
+`
+
+export const TitleText = styled.h2`
+   color: #E4E4E4;
+   font-size:3rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap:wrap;
+   text-align: center;
    
 `
+export const SubTitleText = styled.h4`
+   color: #E4E4E4;
+   font-size:1.2rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap:wrap;
+   text-align: center;
+   padding:0px 35px 0px 35px;
+   margin:0; 
+`
+
+export const Footer = styled.footer`
+margin-top:30px;
+   border-top:1px solid #fff
+   
+`
+
