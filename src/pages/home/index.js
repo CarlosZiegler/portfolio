@@ -127,7 +127,7 @@ export default function Home() {
                     </session>
                 </Container>
                 <TitleText> More about me</TitleText>
-                <SubTitleText > Look at my Resume</SubTitleText>
+                <SubTitleText > Look at my resume</SubTitleText>
 
                 <Container>
                     <session className="column-2" >
