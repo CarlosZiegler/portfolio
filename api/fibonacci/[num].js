@@ -32,7 +32,7 @@ async function Test(req, res) {
     }
 
 
-    return res.json({ num })
+    return res.json({ isFibonnaci: isFibonnaci(num) })
 }
 
 module.exports = cors(Test)
