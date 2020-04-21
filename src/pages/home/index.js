@@ -10,6 +10,7 @@ import siteDevelopmentData from '../../assets/testing.json'
 import DeveloperData from '../../assets/developer.json'
 import ResumeData from '../../assets/resume.json'
 import EmailData from '../../assets/email.json'
+import ServiceData from '../../assets/service.json'
 
 import github from '../../assets/github.png'
 import instagram from '../../assets/insta.png'
@@ -48,6 +49,12 @@ export default function Home() {
         loop: true,
         autoplay: true,
         animationData: EmailData,
+
+    };
+    const OptionsAPI = {
+        loop: true,
+        autoplay: true,
+        animationData: ServiceData,
 
     };
 
@@ -139,6 +146,23 @@ export default function Home() {
                         </div>
                         <div className="tag">
                             <a href={ResumePDF} target="_blank" rel="noopener noreferrer"><h4 className="bg-color" > Open my Resume </h4></a>
+                        </div>
+
+                    </session>
+                </Container>
+                <TitleText> Don't like PDF</TitleText>
+                <SubTitleText > Get my CV in Json</SubTitleText>
+                <Container>
+                    <session className="column-2" >
+
+                        <div className="tag">
+                            <a href={"/api/resume"} target="_blank" rel="noopener noreferrer"><h4 className="bg-color" > Go to API  </h4></a>
+                        </div>
+                        <div>
+                            <Lottie options={OptionsAPI}
+                                height={"auto"}
+                                width={"300px"}
+                            />
                         </div>
 
                     </session>
