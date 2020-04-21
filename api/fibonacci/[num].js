@@ -14,7 +14,7 @@ async function Test(req, res) {
         let fibonacciArray = []
         let element = 0
 
-        for (let index = 0; element < 350; index++) {
+        for (let index = 0; ; index++) {
 
             if (index < 2) {
                 fibonacciArray.push(index)
@@ -22,6 +22,11 @@ async function Test(req, res) {
             }
 
             element = fibonacciArray[(index - 1)] + fibonacciArray[(index - 2)]
+
+            if (element > 350) {
+                break
+            }
+
             fibonacciArray.push(element)
 
         }
