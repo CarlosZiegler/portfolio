@@ -9,7 +9,7 @@ async function Test(req, res) {
     const { num } = req.query
 
 
-    const fibonacci = () => {
+    const fibonacci = (limit = 350) => {
 
         let fibonacciArray = []
         let element = 0
@@ -23,7 +23,7 @@ async function Test(req, res) {
 
             element = fibonacciArray[(index - 1)] + fibonacciArray[(index - 2)]
 
-            if (element > 350) {
+            if (element > limit) {
                 break
             }
 
