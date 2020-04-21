@@ -8,6 +8,7 @@ async function Test(req, res) {
 
     const { num } = req.query
 
+
     const fibonacci = () => {
 
         let fibonacciArray = []
@@ -28,7 +29,8 @@ async function Test(req, res) {
     }
 
     const isFibonnaci = (num) => {
-        return fibonacci().includes(num)
+
+        return fibonacci().includes(Number(num))
     }
 
 
