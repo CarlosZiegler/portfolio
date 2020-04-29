@@ -1,4 +1,7 @@
+import { products } from './data/products.json'
 const Cors = require('micro-cors')
+
+
 const { getCategories,
     getPromotion,
     getPrices,
@@ -43,7 +46,7 @@ function getShoppingCart(ids, productsList) {
 
 async function cart(req, res) {
 
-    const { ids, products } = req.body
+    const { ids } = req.body
 
     const result = getShoppingCart(ids, products)
 
