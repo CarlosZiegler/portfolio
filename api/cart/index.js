@@ -9,7 +9,7 @@ const { getCategories,
 
 
 const cors = Cors({
-    allowedMethods: ['GET']
+    allowedMethods: ['GET', 'POST']
 })
 
 
