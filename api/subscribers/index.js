@@ -13,9 +13,9 @@ const fetchData = async () => {
 const getResults = async () => {
     const $ = await fetchData();
 
-    const element = $('#subscriber-count').text();
+    const element = $('#subscriber-count').html();
 
-    return element != '' ? element : 'not value';
+    return element !== '' ? element : 'not value';
 }
 
 const cors = Cors({
