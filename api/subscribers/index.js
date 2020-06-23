@@ -19,7 +19,7 @@ async function Subscribers(req, res) {
 
     const $ = await fetchData();
 
-    const element2 = $.html().split(' ').filter((item) => item.includes('300.000'))
+    const element2 = $.html().split(' ').filter((item) => item.includes('298.000'))
 
     return element2.length > 0
         ? res.json({ isMore300k: true })
