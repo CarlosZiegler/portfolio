@@ -13,9 +13,9 @@ const fetchData = async () => {
 const getResults = async () => {
     const $ = await fetchData();
 
-    const element = $('yt-formatted-string[id="subscriber-count"]').eq(0)
+    const element = $('#subscriber-count').text();
 
-    return element ? element.text().trim() : 'not value';
+    return element != '' ? element : 'not value';
 }
 
 const cors = Cors({
