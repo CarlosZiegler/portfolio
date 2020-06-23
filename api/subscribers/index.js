@@ -11,6 +11,13 @@ const fetchData = async () => {
     return cheerio.load(result.data);
 };
 
+const getResults = async () => {
+    const $ = await fetchData();
+    const substr = $('#subscriber-count').text();
+    console.log(substr)
+    return substr
+}
+
 const cors = Cors({
     allowedMethods: ['GET']
 })
@@ -33,7 +40,7 @@ const cors = Cors({
 
 async function Subscribers(req, res) {
 
-    const count = fetchData()
+    const count = getResults()
 
     return res.json({
         count
