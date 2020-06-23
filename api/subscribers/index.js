@@ -12,7 +12,8 @@ const fetchData = async () => {
 
 const getResults = async () => {
     const $ = await fetchData();
-    const substr = $('yt-formatted-string[id="subscriber-count"]').text();
+
+    const substr = $('yt-formatted-string[id="subscriber-count"]');
     console.log(substr)
     return substr
 }
