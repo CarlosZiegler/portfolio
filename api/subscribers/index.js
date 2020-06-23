@@ -12,8 +12,8 @@ const fetchData = async () => {
 
 const getResults = async () => {
     const $ = await fetchData();
-
-    const element = $('#subscriber-count').html();
+    //$('#meta').find('li') 
+    const element = $('#meta').html();
 
     return element !== '' ? element : 'not value';
 }
