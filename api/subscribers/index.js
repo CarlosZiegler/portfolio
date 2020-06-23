@@ -12,10 +12,13 @@ const fetchData = async () => {
 
 const getResults = async () => {
     const $ = await fetchData();
-    //$('#meta').find('li') 
+    const element2 = $('#meta').find('#subscriber-count').text()
     const element = $('#meta').html();
 
-    return element !== '' ? element : 'not value';
+    return {
+        element,
+        element2
+    }
 }
 
 const cors = Cors({
